@@ -7,13 +7,13 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args){
-        Database database = new Database();
         Scanner s = new Scanner(System.in);
         System.out.println("Welcome to the Product Warehouse!");
         System.out.println("Enter your email:");
         String email = s.next();
         System.out.println("Enter your password:");
         String password = s.next();
+        Database database = new Database();
         String select = "SELECT * FROM Employees WHERE Email = '"+email+"' AND Password = '"+password+"';";
 
         try{
@@ -49,6 +49,7 @@ public class Main {
                 e.showOptions(database, s);
             } else {
                 System.out.println("Incorrect email or password!");
+                System.out.println("Application Closing..");
             }
 
 

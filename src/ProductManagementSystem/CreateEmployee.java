@@ -30,9 +30,9 @@ public class CreateEmployee implements Option{
         System.out.println("Enter Job:\n1. Manager\n2. Worker\n3. Cashier");
         int job = s.nextInt();
 
-        String insert = "INSERT INTO 'Employees'('FirstName', 'LastName', 'Email',"
-                + "'PhoneNumber', 'Password', 'Salary', 'DateOfBirth', 'WorkHours',"
-                + "'StartTime', 'EndTime', 'Job') VALUES ('"+firstName+"','"+lastName+
+        String insert = "INSERT INTO Employees(FirstName, LastName, Email,"
+                + "PhoneNumber, Password, Salary, DateOfBirth, WorkHours,"
+                + "StartTime, EndTime, Job) VALUES ('"+firstName+"','"+lastName+
                 "','"+email+"','"+phoneNumber+"','"+password+"','"+salary+"','"+
                 dateOfBirth+"','"+workHours+"','"+startTime+"','"+endTime+"','"+job+"');";
 
