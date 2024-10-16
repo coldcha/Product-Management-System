@@ -36,8 +36,8 @@ public class Main {
                         break;
                 }
                 e.setID(rs.getInt("ID"));
-                e.setFirstName(rs.getString("First Name"));
-                e.setLastName(rs.getString("Last Name"));
+                e.setFirstName(rs.getString("FirstName"));
+                e.setLastName(rs.getString("LastName"));
                 e.setEmail(rs.getString("Email"));
                 e.setPhoneNumber(rs.getString("PhoneNumber"));
                 e.setPassword(rs.getString("Password"));

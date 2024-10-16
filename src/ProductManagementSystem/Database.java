@@ -6,7 +6,7 @@ public class Database {
 
     private String url = "jdbc:mysql://127.0.0.1:3306/ProductWarehouse";
     private String username = "root";
-    private String password = "Nikheel04";
+    private String password = "rootroot";
     private Statement statement;
 
     public Database(){
