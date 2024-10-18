@@ -20,7 +20,7 @@ public abstract class Employee {
     private LocalTime startTime;
     private LocalTime endTime;
     protected Option[] options;
-    private DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("yyyy-dd-MM");
+    private DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
     private DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("HH:mm");
 
 
@@ -59,7 +59,7 @@ public abstract class Employee {
     public String getEndTime(){return timeFormatter.format(endTime);}
     public void setEndTime(String endTime){this.endTime = LocalTime.parse(endTime, timeFormatter);}
 
-    public String getDateFormat(){return "yyyy-dd-MM";}
+    public String getDateFormat(){return "yyyy-MM-dd";}
     public String getTimeFormat(){return "HH:mm";}
 
     public void showOptions(Database database, Scanner s){

@@ -19,7 +19,7 @@ public class CreateEmployee implements Option{
         String password = s.next();
         System.out.println("Enter Salary (Double):");
         double salary = s.nextDouble();
-        System.out.println("Enter Date of Birth (yyyy-dd-MM):");
+        System.out.println("Enter Date of Birth (yyyy-MM-dd):");
         String dateOfBirth = s.next();
         System.out.println("Enter Work Hours (int):");
         int workHours = s.nextInt();
